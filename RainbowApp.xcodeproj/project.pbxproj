@@ -16,13 +16,14 @@
 		0A162ACA2AFD20FA00DF885A /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AB42AFD20FA00DF885A /* settingsViewController.swift */; };
 		0A162ACB2AFD20FA00DF885A /* setingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AB62AFD20FA00DF885A /* setingsModel.swift */; };
 		0A162ACC2AFD20FA00DF885A /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AB82AFD20FA00DF885A /* settingsView.swift */; };
-		0A162ACD2AFD20FA00DF885A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABB2AFD20FA00DF885A /* mainViewController.swift */; };
+		0A162ACD2AFD20FA00DF885A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABB2AFD20FA00DF885A /* MainViewController.swift */; };
 		0A162ACE2AFD20FA00DF885A /* mainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABD2AFD20FA00DF885A /* mainModel.swift */; };
-		0A162ACF2AFD20FA00DF885A /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABF2AFD20FA00DF885A /* mainView.swift */; };
+		0A162ACF2AFD20FA00DF885A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABF2AFD20FA00DF885A /* MainView.swift */; };
 		0A162AD02AFD20FA00DF885A /* rulesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC22AFD20FA00DF885A /* rulesViewControllerViewController.swift */; };
 		0A162AD12AFD20FA00DF885A /* rulesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC42AFD20FA00DF885A /* rulesModel.swift */; };
 		0A162AD22AFD20FA00DF885A /* rulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC62AFD20FA00DF885A /* rulesView.swift */; };
 		0A162AD62AFD239500DF885A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A162AD52AFD239500DF885A /* README.md */; };
+		95CC9FD22B017273001CDBDA /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC9FD12B017273001CDBDA /* R.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,13 +38,14 @@
 		0A162AB42AFD20FA00DF885A /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		0A162AB62AFD20FA00DF885A /* setingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setingsModel.swift; sourceTree = "<group>"; };
 		0A162AB82AFD20FA00DF885A /* settingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
-		0A162ABB2AFD20FA00DF885A /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		0A162ABB2AFD20FA00DF885A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0A162ABD2AFD20FA00DF885A /* mainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainModel.swift; sourceTree = "<group>"; };
-		0A162ABF2AFD20FA00DF885A /* mainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		0A162ABF2AFD20FA00DF885A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0A162AC22AFD20FA00DF885A /* rulesViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesViewControllerViewController.swift; sourceTree = "<group>"; };
 		0A162AC42AFD20FA00DF885A /* rulesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesModel.swift; sourceTree = "<group>"; };
 		0A162AC62AFD20FA00DF885A /* rulesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesView.swift; sourceTree = "<group>"; };
 		0A162AD52AFD239500DF885A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		95CC9FD12B017273001CDBDA /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		0A162AAA2AFD201200DF885A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				95CC9FD32B01727C001CDBDA /* Resources */,
 				0A162A912AFD19AE00DF885A /* Assets.xcassets */,
 				0A162A962AFD19AE00DF885A /* Info.plist */,
 			);
@@ -194,7 +197,7 @@
 		0A162ABA2AFD20FA00DF885A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0A162ABB2AFD20FA00DF885A /* mainViewController.swift */,
+				0A162ABB2AFD20FA00DF885A /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,7 +213,7 @@
 		0A162ABE2AFD20FA00DF885A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0A162ABF2AFD20FA00DF885A /* mainView.swift */,
+				0A162ABF2AFD20FA00DF885A /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +250,14 @@
 				0A162AC62AFD20FA00DF885A /* rulesView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		95CC9FD32B01727C001CDBDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95CC9FD12B017273001CDBDA /* R.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,11 +333,12 @@
 				0A162ACC2AFD20FA00DF885A /* settingsView.swift in Sources */,
 				0A162AC72AFD20FA00DF885A /* secondViewController.swift in Sources */,
 				0A162ACB2AFD20FA00DF885A /* setingsModel.swift in Sources */,
+				95CC9FD22B017273001CDBDA /* R.swift in Sources */,
 				0A162A892AFD19AD00DF885A /* AppDelegate.swift in Sources */,
-				0A162ACF2AFD20FA00DF885A /* mainView.swift in Sources */,
+				0A162ACF2AFD20FA00DF885A /* MainView.swift in Sources */,
 				0A162A8B2AFD19AD00DF885A /* SceneDelegate.swift in Sources */,
 				0A162AC82AFD20FA00DF885A /* gameModel.swift in Sources */,
-				0A162ACD2AFD20FA00DF885A /* mainViewController.swift in Sources */,
+				0A162ACD2AFD20FA00DF885A /* MainViewController.swift in Sources */,
 				0A162AC92AFD20FA00DF885A /* gameView.swift in Sources */,
 				0A162AD02AFD20FA00DF885A /* rulesViewControllerViewController.swift in Sources */,
 				0A162AD22AFD20FA00DF885A /* rulesView.swift in Sources */,
