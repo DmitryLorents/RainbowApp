@@ -27,11 +27,4 @@ enum R {
     enum Color {
         static let backgroundColor = hexStringToUIColor(hex: "#00000033")
     }
-    
-    enum Fonts {
-        static func CormorantInfant (with size:CGFloat) -> UIFont {
-            UIFont(name: "CormorantInfant-Regular", size: size) ?? UIFont()
-            
-        }
-    }
 }

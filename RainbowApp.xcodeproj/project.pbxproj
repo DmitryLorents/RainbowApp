@@ -23,6 +23,7 @@
 		0A162AD12AFD20FA00DF885A /* rulesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC42AFD20FA00DF885A /* rulesModel.swift */; };
 		0A162AD22AFD20FA00DF885A /* rulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC62AFD20FA00DF885A /* rulesView.swift */; };
 		0A162AD62AFD239500DF885A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A162AD52AFD239500DF885A /* README.md */; };
+		959C7E412B0240D900DD9AB9 /* UIFont + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */; };
 		95C7FDA92B0217BA002ACD11 /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7FDA82B0217BA002ACD11 /* UIColor + ext.swift */; };
 		95C7FDAC2B021BA4002ACD11 /* CormorantInfant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95C7FDAB2B021BA4002ACD11 /* CormorantInfant-Regular.ttf */; };
 		95CC9FD22B017273001CDBDA /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC9FD12B017273001CDBDA /* R.swift */; };
@@ -47,6 +48,7 @@
 		0A162AC42AFD20FA00DF885A /* rulesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesModel.swift; sourceTree = "<group>"; };
 		0A162AC62AFD20FA00DF885A /* rulesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesView.swift; sourceTree = "<group>"; };
 		0A162AD52AFD239500DF885A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + ext.swift"; sourceTree = "<group>"; };
 		95C7FDA82B0217BA002ACD11 /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		95C7FDAB2B021BA4002ACD11 /* CormorantInfant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CormorantInfant-Regular.ttf"; sourceTree = "<group>"; };
 		95CC9FD12B017273001CDBDA /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				95C7FDAB2B021BA4002ACD11 /* CormorantInfant-Regular.ttf */,
+				959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959C7E412B0240D900DD9AB9 /* UIFont + ext.swift in Sources */,
 				0A162ACC2AFD20FA00DF885A /* settingsView.swift in Sources */,
 				0A162AC72AFD20FA00DF885A /* secondViewController.swift in Sources */,
 				0A162ACB2AFD20FA00DF885A /* setingsModel.swift in Sources */,

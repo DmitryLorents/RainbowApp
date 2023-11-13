@@ -44,7 +44,7 @@ class MainView: UIView {
         let label = UILabel()
         label.text = R.Label.nlpGame
         label.font = UIFont.systemFont(ofSize: 36, weight: .light)
-        label.textColor = .black
+        label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -52,8 +52,8 @@ class MainView: UIView {
     private lazy var rainbowLabel: UILabel = {
         let label = UILabel()
         label.text = R.Label.rainbow
-        label.font = R.Fonts.CormorantInfant(with: 60)
-        label.textColor = .black
+        label.font = Fonts.CormorantInfant(with: 60)
+        label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -66,8 +66,7 @@ class MainView: UIView {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        button.widthAnchor.constraint(equalToConstant: 274).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 83).isActive = true
+
         //        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -80,8 +79,6 @@ class MainView: UIView {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        button.widthAnchor.constraint(equalToConstant: 274).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 83).isActive = true
         //        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -151,6 +148,13 @@ class MainView: UIView {
             
             buttonStack.bottomAnchor.constraint(equalTo: configButton.topAnchor, constant: -30),
             buttonStack.centerXAnchor.constraint(equalTo: centerXAnchor),
+            
+            newGameButton.widthAnchor.constraint(equalToConstant: 274),
+            newGameButton.heightAnchor.constraint(equalToConstant: 83),
+            
+            statisticButton.widthAnchor.constraint(equalToConstant: 274),
+            statisticButton.heightAnchor.constraint(equalToConstant: 83),
+            
         ])
     }
     
