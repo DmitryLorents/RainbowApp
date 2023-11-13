@@ -7,12 +7,22 @@
 
 import UIKit
 
+protocol MainViewDelegate: AnyObject {
+    func didTapNewGameButton()
+    func didTapNextButton()
+    func didTapStatiticButton()
+    func didTapConfigButton()
+    func didTapQuestionButton()
+}
+
 class MainView: UIView {
     
     //MARK: - Parameters
     
+    weak var delegate: MainViewDelegate?
+    
     private lazy var labelStack: UIStackView = {
-       let stack = UIStackView()
+        let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         stack.spacing = 30
@@ -23,7 +33,7 @@ class MainView: UIView {
     }()
     
     private lazy var buttonStack: UIStackView = {
-       let stack = UIStackView()
+        let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         stack.spacing = 10
@@ -49,7 +59,7 @@ class MainView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
+    
     private lazy var rainbowLabel: UILabel = {
         let label = UILabel()
         label.text = R.Label.rainbow
@@ -61,32 +71,30 @@ class MainView: UIView {
     
     private lazy var newGameButton: UIButton = {
         let button = UIButton(type: .system)
-
+        
         button.setTitle(R.Label.newGame, for: .normal)
         button.backgroundColor = hexStringToUIColor(hex: "#DE2222")
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-
-        //        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(newGameButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
     private lazy var nextButton: UIButton = {
         let button = UIButton(type: .system)
-
+        
         button.setTitle(R.Label.next, for: .normal)
         button.backgroundColor = hexStringToUIColor(hex: "#2F86B7")
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-
-        //        button.addTarget(self, action: #selector(nextButtonButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(nextButtonButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-
+    
     private lazy var statisticButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle(R.Label.stistic, for: .normal)
@@ -94,7 +102,7 @@ class MainView: UIView {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        //        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(staticticButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -102,7 +110,7 @@ class MainView: UIView {
     private lazy var questionMarkButton: UIButton = {
         let button = UIButton()
         button.setImage(R.Image.questionMark, for: .normal)
-        //        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -110,7 +118,7 @@ class MainView: UIView {
     private lazy var configButton: UIButton = {
         let button = UIButton()
         button.setImage(R.Image.config, for: .normal)
-        //        button.addTarget(self, action: #selector(configButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(configButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -131,7 +139,7 @@ class MainView: UIView {
     
     private func setupView() {
         backgroundColor = R.Color.backgroundColor
-
+        
         addSubview(rainbowImage)
         addSubview(questionMarkButton)
         addSubview(configButton)
@@ -177,20 +185,31 @@ class MainView: UIView {
     }
     
     //MARK: - QuestionMarkButtonAction
-    //    @objc private func questionMarkButtonTapped () {
-    //        print("qb")
-    //    }
-    //
-    //
-    //    //MARK: - ConfigButtonAction
-    //    @objc private func configButtonTapped () {
-    //        print("cb")
-    //
-    //    }
+    @objc private func questionMarkButtonTapped () {
+        delegate?.didTapQuestionButton()
+    }
     
-    //    //MARK: - ConfigButtonAction
-    //    @objc private func configButtonTapped () {
-    //        print("cb")
-    //
-    //    }
+    
+    //MARK: - ConfigButtonAction
+    @objc private func configButtonTapped () {
+        delegate?.didTapConfigButton()
+
+    }
+    
+    //MARK: - ConfigButtonAction
+    @objc private func nextButtonButtonTapped () {
+        delegate?.didTapNextButton()
+
+    }
+    
+    //MARK: - ConfigButtonAction
+    @objc private func newGameButtonTapped () {
+        delegate?.didTapNewGameButton()
+
+    }
+    //MARK: - ConfigButtonAction
+    @objc private func staticticButtonTapped () {
+        delegate?.didTapStatiticButton()
+
+    }
 }

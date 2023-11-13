@@ -25,9 +25,40 @@ extension MainViewController {
     //MARK: - Methods
     private func setViews() {
            view = mainView
-        
+        mainView.delegate = self
        }
-    
-    
 }
 
+extension MainViewController: MainViewDelegate {
+    func didTapNewGameButton() {
+        let vc = gameViewController()
+//        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    func didTapNextButton() {
+        let vc = gameViewController()
+//        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    func didTapStatiticButton() {
+//        let vc = result()
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true)
+        print("result")
+    }
+    
+    func didTapConfigButton() {
+        let vc = settingsViewController()
+//        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    func didTapQuestionButton() {
+        let vc = rulesViewController()
+//        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
+    }
+}
