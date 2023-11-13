@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A162A892AFD19AD00DF885A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162A882AFD19AD00DF885A /* AppDelegate.swift */; };
 		0A162A8B2AFD19AD00DF885A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162A8A2AFD19AD00DF885A /* SceneDelegate.swift */; };
-		0A162A922AFD19AE00DF885A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A162A912AFD19AE00DF885A /* Assets.xcassets */; };
 		0A162AC72AFD20FA00DF885A /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAD2AFD20FA00DF885A /* secondViewController.swift */; };
 		0A162AC82AFD20FA00DF885A /* gameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAF2AFD20FA00DF885A /* gameModel.swift */; };
 		0A162AC92AFD20FA00DF885A /* gameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AB12AFD20FA00DF885A /* gameView.swift */; };
@@ -17,23 +16,22 @@
 		0A162ACB2AFD20FA00DF885A /* setingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AB62AFD20FA00DF885A /* setingsModel.swift */; };
 		0A162ACC2AFD20FA00DF885A /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AB82AFD20FA00DF885A /* settingsView.swift */; };
 		0A162ACD2AFD20FA00DF885A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABB2AFD20FA00DF885A /* MainViewController.swift */; };
-		0A162ACE2AFD20FA00DF885A /* mainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABD2AFD20FA00DF885A /* mainModel.swift */; };
 		0A162ACF2AFD20FA00DF885A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162ABF2AFD20FA00DF885A /* MainView.swift */; };
 		0A162AD02AFD20FA00DF885A /* rulesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC22AFD20FA00DF885A /* rulesViewControllerViewController.swift */; };
 		0A162AD12AFD20FA00DF885A /* rulesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC42AFD20FA00DF885A /* rulesModel.swift */; };
 		0A162AD22AFD20FA00DF885A /* rulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AC62AFD20FA00DF885A /* rulesView.swift */; };
 		0A162AD62AFD239500DF885A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A162AD52AFD239500DF885A /* README.md */; };
+		0ACD9E842B02BD4200FE9DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD9E832B02BD4200FE9DBA /* Assets.xcassets */; };
 		959C7E412B0240D900DD9AB9 /* UIFont + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */; };
 		95C7FDA92B0217BA002ACD11 /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7FDA82B0217BA002ACD11 /* UIColor + ext.swift */; };
 		95C7FDAC2B021BA4002ACD11 /* CormorantInfant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95C7FDAB2B021BA4002ACD11 /* CormorantInfant-Regular.ttf */; };
-		95CC9FD22B017273001CDBDA /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC9FD12B017273001CDBDA /* R.swift */; };
+		95CC9FD22B017273001CDBDA /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC9FD12B017273001CDBDA /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A162A852AFD19AD00DF885A /* RainbowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A162A882AFD19AD00DF885A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A162A8A2AFD19AD00DF885A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A162A912AFD19AE00DF885A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A162A962AFD19AE00DF885A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A162AAD2AFD20FA00DF885A /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		0A162AAF2AFD20FA00DF885A /* gameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameModel.swift; sourceTree = "<group>"; };
@@ -42,16 +40,16 @@
 		0A162AB62AFD20FA00DF885A /* setingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setingsModel.swift; sourceTree = "<group>"; };
 		0A162AB82AFD20FA00DF885A /* settingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
 		0A162ABB2AFD20FA00DF885A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		0A162ABD2AFD20FA00DF885A /* mainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainModel.swift; sourceTree = "<group>"; };
 		0A162ABF2AFD20FA00DF885A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0A162AC22AFD20FA00DF885A /* rulesViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesViewControllerViewController.swift; sourceTree = "<group>"; };
 		0A162AC42AFD20FA00DF885A /* rulesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesModel.swift; sourceTree = "<group>"; };
 		0A162AC62AFD20FA00DF885A /* rulesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rulesView.swift; sourceTree = "<group>"; };
 		0A162AD52AFD239500DF885A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0ACD9E832B02BD4200FE9DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + ext.swift"; sourceTree = "<group>"; };
 		95C7FDA82B0217BA002ACD11 /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		95C7FDAB2B021BA4002ACD11 /* CormorantInfant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CormorantInfant-Regular.ttf"; sourceTree = "<group>"; };
-		95CC9FD12B017273001CDBDA /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		95CC9FD12B017273001CDBDA /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +85,7 @@
 			children = (
 				0A162A9C2AFD1A0600DF885A /* App */,
 				0A162A9D2AFD1A6900DF885A /* Modules */,
+				0ACD9E822B02BCA300FE9DBA /* Extensions */,
 				0A162AAA2AFD201200DF885A /* SupportingFiles */,
 			);
 			path = RainbowApp;
@@ -116,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				95CC9FD32B01727C001CDBDA /* Resources */,
-				0A162A912AFD19AE00DF885A /* Assets.xcassets */,
+				0ACD9E832B02BD4200FE9DBA /* Assets.xcassets */,
 				0A162A962AFD19AE00DF885A /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -211,7 +210,7 @@
 		0A162ABC2AFD20FA00DF885A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0A162ABD2AFD20FA00DF885A /* mainModel.swift */,
+				95CC9FD12B017273001CDBDA /* MainModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,11 +257,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0ACD9E822B02BCA300FE9DBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95C7FDA82B0217BA002ACD11 /* UIColor + ext.swift */,
+				959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		95C7FDAA2B021B6C002ACD11 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				95C7FDAB2B021BA4002ACD11 /* CormorantInfant-Regular.ttf */,
-				959C7E402B0240D900DD9AB9 /* UIFont + ext.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -271,8 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				95C7FDAA2B021B6C002ACD11 /* Fonts */,
-				95CC9FD12B017273001CDBDA /* R.swift */,
-				95C7FDA82B0217BA002ACD11 /* UIColor + ext.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,8 +341,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C7FDAC2B021BA4002ACD11 /* CormorantInfant-Regular.ttf in Resources */,
+				0ACD9E842B02BD4200FE9DBA /* Assets.xcassets in Resources */,
 				0A162AD62AFD239500DF885A /* README.md in Resources */,
-				0A162A922AFD19AE00DF885A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +357,7 @@
 				0A162ACC2AFD20FA00DF885A /* settingsView.swift in Sources */,
 				0A162AC72AFD20FA00DF885A /* secondViewController.swift in Sources */,
 				0A162ACB2AFD20FA00DF885A /* setingsModel.swift in Sources */,
-				95CC9FD22B017273001CDBDA /* R.swift in Sources */,
+				95CC9FD22B017273001CDBDA /* MainModel.swift in Sources */,
 				0A162A892AFD19AD00DF885A /* AppDelegate.swift in Sources */,
 				0A162ACF2AFD20FA00DF885A /* MainView.swift in Sources */,
 				0A162A8B2AFD19AD00DF885A /* SceneDelegate.swift in Sources */,
@@ -362,7 +367,6 @@
 				0A162AC92AFD20FA00DF885A /* gameView.swift in Sources */,
 				0A162AD02AFD20FA00DF885A /* rulesViewControllerViewController.swift in Sources */,
 				0A162AD22AFD20FA00DF885A /* rulesView.swift in Sources */,
-				0A162ACE2AFD20FA00DF885A /* mainModel.swift in Sources */,
 				0A162AD12AFD20FA00DF885A /* rulesModel.swift in Sources */,
 				0A162ACA2AFD20FA00DF885A /* settingsViewController.swift in Sources */,
 			);
