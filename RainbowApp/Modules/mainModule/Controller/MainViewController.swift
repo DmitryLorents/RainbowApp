@@ -16,49 +16,45 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
-       
+        
     }
-
+    
 }
 
 extension MainViewController {
     //MARK: - Methods
     private func setViews() {
-           view = mainView
+        view = mainView
         mainView.delegate = self
-       }
+    }
 }
 
 extension MainViewController: MainViewDelegate {
     func didTapNewGameButton() {
         let vc = gameViewController()
-//        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func didTapNextButton() {
         let vc = gameViewController()
-//        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func didTapStatiticButton() {
-//        let vc = result()
-//        vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated: true)
+        // let vc = result()
+        // navigationController?.pushViewController(vc, animated: true)
         print("result")
     }
     
     func didTapConfigButton() {
         let vc = settingsViewController()
-//        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
+
     }
     
     func didTapQuestionButton() {
         let vc = rulesViewController()
-//        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
         
     }
 }
