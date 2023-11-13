@@ -29,6 +29,7 @@ class MainView: UIView {
         stack.spacing = 10
         stack.alignment = .center
         stack.addArrangedSubview(newGameButton)
+        stack.addArrangedSubview(nextButton)
         stack.addArrangedSubview(statisticButton)
         return stack
     }()
@@ -68,6 +69,20 @@ class MainView: UIView {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
 
         //        button.addTarget(self, action: #selector(questionMarkButtonTapped), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private lazy var nextButton: UIButton = {
+        let button = UIButton(type: .system)
+
+        button.setTitle(R.Label.next, for: .normal)
+        button.backgroundColor = hexStringToUIColor(hex: "#2F86B7")
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+
+        //        button.addTarget(self, action: #selector(nextButtonButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -152,6 +167,9 @@ class MainView: UIView {
             newGameButton.widthAnchor.constraint(equalToConstant: 274),
             newGameButton.heightAnchor.constraint(equalToConstant: 83),
             
+            nextButton.widthAnchor.constraint(equalToConstant: 274),
+            nextButton.heightAnchor.constraint(equalToConstant: 83),
+            
             statisticButton.widthAnchor.constraint(equalToConstant: 274),
             statisticButton.heightAnchor.constraint(equalToConstant: 83),
             
@@ -164,6 +182,12 @@ class MainView: UIView {
     //    }
     //
     //
+    //    //MARK: - ConfigButtonAction
+    //    @objc private func configButtonTapped () {
+    //        print("cb")
+    //
+    //    }
+    
     //    //MARK: - ConfigButtonAction
     //    @objc private func configButtonTapped () {
     //        print("cb")

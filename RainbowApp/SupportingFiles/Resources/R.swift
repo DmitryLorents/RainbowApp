@@ -20,6 +20,7 @@ enum R {
         static let nlpGame = "НЛП игра"
         static let rainbow = "Радуга"
         static let newGame = "Новая игра"
+        static let next = "Продолжить"
         static let stistic = "Статистика"
 
     }
