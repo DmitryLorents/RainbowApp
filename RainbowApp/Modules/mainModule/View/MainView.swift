@@ -15,7 +15,7 @@ class MainView: UIView {
        let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
-        stack.spacing = 10
+        stack.spacing = 30
         stack.alignment = .center
         stack.addArrangedSubview(gameLabel)
         stack.addArrangedSubview(rainbowLabel)
@@ -52,7 +52,7 @@ class MainView: UIView {
     private lazy var rainbowLabel: UILabel = {
         let label = UILabel()
         label.text = R.Label.rainbow
-        label.font = UIFont.systemFont(ofSize: 40)
+        label.font = R.Fonts.CormorantInfant(with: 60)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -62,7 +62,7 @@ class MainView: UIView {
         let button = UIButton(type: .system)
 
         button.setTitle(R.Label.newGame, for: .normal)
-        button.backgroundColor = .red
+        button.backgroundColor = hexStringToUIColor(hex: "#DE2222")
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
@@ -72,11 +72,11 @@ class MainView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
+
     private lazy var statisticButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle(R.Label.stistic, for: .normal)
-        button.backgroundColor = .green
+        button.backgroundColor = hexStringToUIColor(hex: "#30A74A")
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
@@ -118,7 +118,7 @@ class MainView: UIView {
     //MARK: - Methods
     
     private func setupView() {
-        backgroundColor = .white
+        backgroundColor = R.Color.backgroundColor
 
         addSubview(rainbowImage)
         addSubview(questionMarkButton)
@@ -131,7 +131,7 @@ class MainView: UIView {
     
     private func setContraints() {
         NSLayoutConstraint.activate([
-            rainbowImage.topAnchor.constraint(equalTo: topAnchor, constant: 72),
+            rainbowImage.topAnchor.constraint(equalTo: topAnchor, constant: 92),
             rainbowImage.centerXAnchor.constraint(equalTo: centerXAnchor),
             rainbowImage.widthAnchor.constraint(equalToConstant: 302),
             rainbowImage.heightAnchor.constraint(equalToConstant: 150),
@@ -146,10 +146,10 @@ class MainView: UIView {
             configButton.heightAnchor.constraint(equalToConstant: 50),
             configButton.widthAnchor.constraint(equalToConstant: 50),
             
-            labelStack.topAnchor.constraint(equalTo: rainbowImage.bottomAnchor, constant: 10),
+            labelStack.topAnchor.constraint(equalTo: rainbowImage.bottomAnchor, constant: 40),
             labelStack.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            buttonStack.topAnchor.constraint(equalTo: labelStack.bottomAnchor, constant: 100),
+            buttonStack.bottomAnchor.constraint(equalTo: configButton.topAnchor, constant: -30),
             buttonStack.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
     }

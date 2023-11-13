@@ -16,10 +16,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
-        
+       
     }
-    
-    
 
 }
 
@@ -27,6 +25,7 @@ extension MainViewController {
     //MARK: - Methods
     private func setViews() {
            view = mainView
+        
        }
     
     

@@ -18,9 +18,20 @@ enum R {
     
     enum Label {
         static let nlpGame = "НЛП игра"
-        static let rainbow = "Rainbow"
+        static let rainbow = "Радуга"
         static let newGame = "Новая игра"
         static let stistic = "Статистика"
 
+    }
+    
+    enum Color {
+        static let backgroundColor = hexStringToUIColor(hex: "#00000033")
+    }
+    
+    enum Fonts {
+        static func CormorantInfant (with size:CGFloat) -> UIFont {
+            UIFont(name: "CormorantInfant-Regular", size: size) ?? UIFont()
+            
+        }
     }
 }
