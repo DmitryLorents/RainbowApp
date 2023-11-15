@@ -27,6 +27,9 @@
 		0ACD9E952B02BF5200FE9DBA /* UIFont + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD9E932B02BF5200FE9DBA /* UIFont + ext.swift */; };
 		0ACD9E972B02BF6F00FE9DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD9E962B02BF6F00FE9DBA /* Assets.xcassets */; };
 		0ACD9E9B2B02BF7900FE9DBA /* CormorantInfant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD9E9A2B02BF7900FE9DBA /* CormorantInfant-Regular.ttf */; };
+		115E13F42B043E1B00C19201 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E13F32B043E1B00C19201 /* ResultsViewController.swift */; };
+		115E13F62B043E2800C19201 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E13F52B043E2800C19201 /* ResultView.swift */; };
+		115E13F92B043F4900C19201 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E13F82B043F4900C19201 /* ResultCell.swift */; };
 		ACC0F5242B0365F30016C3ED /* UIKit + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0F5232B0365F30016C3ED /* UIKit + ext.swift */; };
 		ACC0F5262B0368A20016C3ED /* ColorboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0F5252B0368A20016C3ED /* ColorboxView.swift */; };
 		ACC0F5282B036E310016C3ED /* SettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0F5272B036E310016C3ED /* SettingsCellView.swift */; };
@@ -55,6 +58,9 @@
 		0ACD9E962B02BF6F00FE9DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ACD9E9A2B02BF7900FE9DBA /* CormorantInfant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CormorantInfant-Regular.ttf"; sourceTree = "<group>"; };
 		0ACD9E9C2B02BF8800FE9DBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115E13F32B043E1B00C19201 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		115E13F52B043E2800C19201 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		115E13F82B043F4900C19201 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		ACC0F5232B0365F30016C3ED /* UIKit + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit + ext.swift"; sourceTree = "<group>"; };
 		ACC0F5252B0368A20016C3ED /* ColorboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorboxView.swift; sourceTree = "<group>"; };
 		ACC0F5272B036E310016C3ED /* SettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 		0A162A9D2AFD1A6900DF885A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				115E13EF2B043DB500C19201 /* ResultModule */,
 				0ACD9E852B02BF0700FE9DBA /* mainModule */,
 				0A162AAB2AFD20FA00DF885A /* gameModule */,
 				0A162AC02AFD20FA00DF885A /* rulesModule */,
@@ -296,6 +303,48 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		115E13EF2B043DB500C19201 /* ResultModule */ = {
+			isa = PBXGroup;
+			children = (
+				115E13F22B043E0000C19201 /* Controller */,
+				115E13F12B043DF900C19201 /* View */,
+				115E13F02B043DF200C19201 /* Model */,
+			);
+			path = ResultModule;
+			sourceTree = "<group>";
+		};
+		115E13F02B043DF200C19201 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115E13F12B043DF900C19201 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				115E13F72B043F3B00C19201 /* Cell */,
+				115E13F52B043E2800C19201 /* ResultView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115E13F22B043E0000C19201 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115E13F32B043E1B00C19201 /* ResultsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115E13F72B043F3B00C19201 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				115E13F82B043F4900C19201 /* ResultCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,7 +431,9 @@
 				0A162AC72AFD20FA00DF885A /* secondViewController.swift in Sources */,
 				0A162ACB2AFD20FA00DF885A /* setingsModel.swift in Sources */,
 				ACC0F52A2B03A4640016C3ED /* UserDefaultService.swift in Sources */,
+				115E13F62B043E2800C19201 /* ResultView.swift in Sources */,
 				0ACD9E8C2B02BF0700FE9DBA /* MainViewController.swift in Sources */,
+				115E13F92B043F4900C19201 /* ResultCell.swift in Sources */,
 				0A162A892AFD19AD00DF885A /* AppDelegate.swift in Sources */,
 				0A162AC82AFD20FA00DF885A /* gameModel.swift in Sources */,
 				0A162AC92AFD20FA00DF885A /* gameView.swift in Sources */,
@@ -390,6 +441,7 @@
 				0A162AD02AFD20FA00DF885A /* rulesViewControllerViewController.swift in Sources */,
 				0A162AD22AFD20FA00DF885A /* rulesView.swift in Sources */,
 				ACC0F5242B0365F30016C3ED /* UIKit + ext.swift in Sources */,
+				115E13F42B043E1B00C19201 /* ResultsViewController.swift in Sources */,
 				0A162AD12AFD20FA00DF885A /* rulesModel.swift in Sources */,
 				0ACD9E952B02BF5200FE9DBA /* UIFont + ext.swift in Sources */,
 				0A162ACA2AFD20FA00DF885A /* settingsViewController.swift in Sources */,
